@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Days from './component/weeks';
+import Rating from './component/rating';
+import styled from "styled-components";
+import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <BrowserRouter>
+        <Wrap className="App">
+          <Routes>
+            <Route exact path="/"  element={<Days/>}/>
+            <Route path="/rating/:getweek" element={<Rating/>}/>
+          </Routes>
+        </Wrap>
+        </BrowserRouter>
+    );
 }
+
+const Wrap = styled.div `
+    width: 500px;
+    height: 800PX;
+    margin: 50px auto;
+    padding: 50PX 0px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 5px;
+`;
 
 export default App;
