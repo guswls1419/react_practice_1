@@ -5,9 +5,6 @@
 
 작업물 : http://reactpractice1.s3-website.ap-northeast-2.amazonaws.com
 
-⚡ Tech Stack ⚡
-
-
 ## ✏ 구현한 기능 ✏
 1. 평점은 1~5까지 숫자 중 랜덤한 정수로 찍히게 구현
 2. 삼각형 누르면 평정남기기 페이지로 이동.
