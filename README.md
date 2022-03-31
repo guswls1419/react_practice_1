@@ -3,7 +3,7 @@
 
 작업명 : 내 일주일 평점 남기기
 
-작업물 : http://reactpractice1.s3-website.ap-northeast-2.amazonaws.com
+작업물 : https://www.youtube.com/watch?v=etzLx8QH1sg
 
 
 
